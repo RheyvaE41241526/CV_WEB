@@ -197,8 +197,20 @@ h2{
 
 .project-box h3{
     color:#2563eb;
-    margin-bottom:15px;
+    font-size:24px;
+    margin-bottom:12px;
 }
+
+/* DESKRIPSI PROJECT */
+
+.project-desc{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* SLIDER */
 
 .slider{
     display:flex;
@@ -226,7 +238,6 @@ h2{
     background:#3b82f6;
     border-radius:10px;
 }
-
 /* =======================
    CERTIFICATE
 ======================= */
