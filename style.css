@@ -12,6 +12,7 @@
 
 .btn-project{
     display:inline-block;
+    margin-top:15px;
     padding:12px 25px;
     background:transparent;
     border:2px solid #64ffda;
@@ -40,7 +41,29 @@
 }
 
 /* =========================
-   SKILL SECTION
+   PROJECT BOX IMPROVEMENT
+========================= */
+
+.project-box{
+    background:#112240;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:40px;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(100,255,218,0.15);
+}
+
+.project-box h3{
+    color:#64ffda;
+    margin-bottom:10px;
+}
+
+/* =========================
+   SKILL PROGRESS BAR
 ========================= */
 
 .skill{
@@ -87,22 +110,7 @@
 }
 
 /* =========================
-   SOCIAL LINK
-========================= */
-
-#kontak a,
-#sosial a{
-    color:#64ffda;
-    text-decoration:none;
-}
-
-#kontak a:hover,
-#sosial a:hover{
-    text-decoration:underline;
-}
-
-/* =========================
-   SERTIFIKAT
+   CERTIFICATE CARD
 ========================= */
 
 .item{
@@ -123,61 +131,21 @@
 }
 
 /* =========================
-   FOOTER
-========================= */
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#020c1b;
-    color:#8892b0;
-    margin-top:40px;
-    border-top:1px solid rgba(255,255,255,0.1);
-}
-
-/* =========================
-   ANIMATION
-========================= */
-
-section{
-    animation:fadeUp 0.8s ease;
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* =========================
-   HOVER EFFECT PROJECT
-========================= */
-
-.project-box{
-    background:#112240;
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:40px;
-    transition:0.3s;
-}
-
-.project-box:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(100,255,218,0.15);
-}
-
-/* =========================
-   CONTACT CARD
+   CONTACT
 ========================= */
 
 #kontak .card p{
     margin:12px 0;
     color:#ccd6f6;
+}
+
+#kontak a{
+    color:#64ffda;
+    text-decoration:none;
+}
+
+#kontak a:hover{
+    text-decoration:underline;
 }
 
 /* =========================
@@ -201,7 +169,7 @@ h2::after{
 }
 
 /* =========================
-   PROFILE GLOW EFFECT
+   PROFILE GLOW
 ========================= */
 
 .profile{
@@ -209,7 +177,20 @@ h2::after{
 }
 
 /* =========================
-   SCROLL TO TOP BUTTON
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020c1b;
+    color:#8892b0;
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   SCROLL TO TOP
 ========================= */
 
 #topBtn{
@@ -227,6 +208,7 @@ h2::after{
     display:none;
     z-index:999;
     font-weight:bold;
+    transition:0.3s;
 }
 
 #topBtn:hover{
@@ -234,7 +216,43 @@ h2::after{
 }
 
 /* =========================
-   MOBILE
+   ANIMATION
+========================= */
+
+section{
+    animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0a192f;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#64ffda;
+    border-radius:20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
 ========================= */
 
 @media(max-width:768px){
